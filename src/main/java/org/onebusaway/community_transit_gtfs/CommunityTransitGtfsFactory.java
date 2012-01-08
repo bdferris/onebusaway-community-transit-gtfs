@@ -246,10 +246,8 @@ public class CommunityTransitGtfsFactory {
     List<PublicTimeTable> timetables = processScheduleDirectory(
         _scheduleInputPath, new ArrayList<PublicTimeTable>());
 
-    int index = 0;
     for (PublicTimeTable timetable : timetables) {
       int directionIndex = 0;
-      index++;
       for (PttPlaceInfo placeInfo : timetable.getPlaceInfos()) {
 
         Map<String, Integer> timepointPositions = getTimepointPositions(placeInfo);

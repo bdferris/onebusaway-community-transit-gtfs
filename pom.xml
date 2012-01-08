@@ -6,7 +6,6 @@
         <groupId>org.onebusaway</groupId>
         <version>1.0.6</version>
     </parent>
-    <groupId>org.onebusaway</groupId>
     <artifactId>onebusaway-community-transit-gtfs</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>onebusaway-community-transit-gtfs</name>
