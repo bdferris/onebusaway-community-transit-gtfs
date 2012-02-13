@@ -1,52 +1,64 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <artifactId>onebusaway</artifactId>
-        <groupId>org.onebusaway</groupId>
-        <version>1.0.6</version>
-    </parent>
-    <artifactId>onebusaway-community-transit-gtfs</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>onebusaway-community-transit-gtfs</name>
-    <description>Build a GTFS for Community Transit from raw schedule and GIS data</description>
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>onebusaway</artifactId>
+    <groupId>org.onebusaway</groupId>
+    <version>1.1.6</version>
+  </parent>
+  <artifactId>onebusaway-community-transit-gtfs</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <name>onebusaway-community-transit-gtfs</name>
+  <description>Build a GTFS for Community Transit from raw schedule and GIS data</description>
+  <url>https://github.com/OneBusAway/onebusaway-community-transit-gtfs/wiki/</url>
 
-    <properties>
-        <geotools.version>2.6.4</geotools.version>
-        <onebusaway.gtfs.version>1.2.0</onebusaway.gtfs.version>
-    </properties>
+  <scm>
+    <connection>scm:git:http://github.com/OneBusAway/onebusaway-community-transit-gtfs.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/OneBusAway/onebusaway-community-transit-gtfs.git</developerConnection>
+    <url>http://github.com/OneBusAway/onebusaway-community-transit-gtfs</url>
+  </scm>
 
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/OneBusAway/onebusaway-community-transit-gtfs/issues</url>
+  </issueManagement>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.geotools</groupId>
-            <artifactId>gt-shapefile</artifactId>
-            <version>${geotools.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.geotools</groupId>
-            <artifactId>gt-epsg-hsql</artifactId>
-            <version>${geotools.version}</version>
-        </dependency>
-        <dependency>
-        	<groupId>org.onebusaway</groupId>
-        	<artifactId>onebusaway-gtfs</artifactId>
-        	<version>${onebusaway.gtfs.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.onebusaway</groupId>
-            <artifactId>onebusaway-gtfs-transformer</artifactId>
-            <version>${onebusaway.gtfs.version}</version>
-        </dependency>
-        <dependency>
-        	<groupId>org.slf4j</groupId>
-        	<artifactId>slf4j-log4j12</artifactId>
-        	<version>1.5.6</version>
-        </dependency>
-        <dependency>
-        	<groupId>commons-digester</groupId>
-        	<artifactId>commons-digester</artifactId>
-        	<version>1.8.1</version>
-        </dependency>
-    </dependencies>
+  <properties>
+    <geotools.version>2.6.4</geotools.version>
+    <onebusaway.gtfs.version>1.2.0</onebusaway.gtfs.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.geotools</groupId>
+      <artifactId>gt-shapefile</artifactId>
+      <version>${geotools.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.geotools</groupId>
+      <artifactId>gt-epsg-hsql</artifactId>
+      <version>${geotools.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.onebusaway</groupId>
+      <artifactId>onebusaway-gtfs</artifactId>
+      <version>${onebusaway.gtfs.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.onebusaway</groupId>
+      <artifactId>onebusaway-gtfs-transformer</artifactId>
+      <version>${onebusaway.gtfs.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.5.6</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-digester</groupId>
+      <artifactId>commons-digester</artifactId>
+      <version>1.8.1</version>
+    </dependency>
+  </dependencies>
 </project>
