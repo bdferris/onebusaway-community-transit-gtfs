@@ -11,17 +11,17 @@
   
   <name>onebusaway-community-transit-gtfs</name>
   <description>Build a GTFS for Community Transit from raw schedule and GIS data</description>
-  <url>https://github.com/OneBusAway/onebusaway-community-transit-gtfs/wiki/</url>
+  <url>https://github.com/bdferris/onebusaway-community-transit-gtfs/wiki/</url>
 
   <scm>
-    <connection>scm:git:http://github.com/OneBusAway/onebusaway-community-transit-gtfs.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/OneBusAway/onebusaway-community-transit-gtfs.git</developerConnection>
-    <url>http://github.com/OneBusAway/onebusaway-community-transit-gtfs</url>
+    <connection>scm:git:http://github.com/bdferris/onebusaway-community-transit-gtfs.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/bdferris/onebusaway-community-transit-gtfs.git</developerConnection>
+    <url>http://github.com/bdferris/onebusaway-community-transit-gtfs</url>
   </scm>
 
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/OneBusAway/onebusaway-community-transit-gtfs/issues</url>
+    <url>https://github.com/bdferris/onebusaway-community-transit-gtfs/issues</url>
   </issueManagement>
 
   <properties>
