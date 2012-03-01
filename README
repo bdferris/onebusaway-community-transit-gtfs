@@ -1,0 +1,16 @@
+To build:
+
+mvn package
+
+To run:
+
+java -jar target/onebusaway-community-transit-gtfs-0.0.1-SNAPSHOT.jar \
+  path/to/schedules/ \
+  path/to/gis/ \
+  path/to/resulting/gtfs/ \
+  https://onebusaway.googlecode.com/svn/wiki/CommunityTransitModifications.wiki
+
+Where path/to/schedules/ is the extracted directory of Community Transit
+schedule data, path/to/gis/ is the extracted directory of Community Transit
+GIS data, and path/to/resulting/gtfs/ is the path where the resulting GTFS
+will be written. 

@@ -1,3 +1,18 @@
+/**
+ * Copyright (C) 2011 Brian Ferris <bdferris@onebusaway.org>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.onebusaway.community_transit_gtfs;
 
 import java.io.File;
@@ -135,7 +150,7 @@ public class CommunityTransitGtfsFactory {
 
   private void processStops() throws Exception {
 
-    File stopsShapeFile = new File(_gisInputPath, "ctstops.shp");
+    File stopsShapeFile = new File(_gisInputPath, "CTBusStops.shp");
 
     FeatureCollection<SimpleFeatureType, SimpleFeature> features = ShapefileLibrary.loadShapeFile(stopsShapeFile);
 
@@ -171,7 +186,7 @@ public class CommunityTransitGtfsFactory {
   private void processRoutesStopSequences() throws Exception {
 
     // File routesShapeFile = new File(_gisInputPath, "ctroutes.shp");
-    File routesShapeFile = new File(_gisInputPath, "ctrteseq.shp");
+    File routesShapeFile = new File(_gisInputPath, "CTRouteStopSequences.shp");
 
     FeatureCollection<SimpleFeatureType, SimpleFeature> features = ShapefileLibrary.loadShapeFile(routesShapeFile);
 
